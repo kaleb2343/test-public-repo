@@ -1,0 +1,184 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ddd; /* Light grey for header */
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Center main content */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Separator for sections */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow books to wrap to next line */
+    gap: 20px; /* Space between book cards */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.book-card {
+    width: 158px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.book-card img {
+    width: 158px; /* Fixed width */
+    height: 210px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the area, might crop */
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.book-card p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 10px;
+    /* Basic truncation for long descriptions - can be improved with JS */
+    height: 3.6em; /* Approx 3 lines of text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+button, a button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, a button:hover {
+    background-color: #4cae4c;
+}
+
+.add-book-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.add-book-section p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+/* Form Styling */
+#account-form div,
+#add-book-form div {
+    margin-bottom: 15px;
+}
+
+#account-form label,
+#add-book-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#account-form input[type="email"],
+#account-form input[type="password"],
+#add-book-form input[type="file"],
+#add-book-form textarea,
+#add-book-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* So padding doesn't increase width */
+}
+
+#add-book-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}

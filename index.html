@@ -1,9 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Test Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Web App - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello! This is my test page.</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="add_book.html">Add Book</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to the Book Web App</h1>
+    </header>
+    <main>
+        <section id="new-releases">
+            <h2>New Releases</h2>
+            <div class="book-list">
+                <!-- Placeholder for new books -->
+                <div class="book-card">
+                    <img src="placeholder_158x210.png" alt="Book Cover">
+                    <h3>Book Title 1</h3>
+                    <p>Short description of book 1.</p>
+                    <button>Download</button>
+                </div>
+                <div class="book-card">
+                    <img src="placeholder_158x210.png" alt="Book Cover">
+                    <h3>Book Title 2</h3>
+                    <p>Short description of book 2.</p>
+                    <button>Download</button>
+                </div>
+                <div class="book-card">
+                    <img src="placeholder_158x210.png" alt="Book Cover">
+                    <h3>Book Title 3</h3>
+                    <p>Short description of book 3.</p>
+                    <button>Download</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Book Web App</p>
+    </footer>
 </body>
 </html>

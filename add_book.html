@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Web App - Add Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="add_book.html">Add Book</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Add Your Book</h1>
+    </header>
+    <main>
+        <section id="account-creation">
+            <h2>Create Account / Login</h2>
+            <form id="account-form">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login / Register</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="add-book-form-section">
+            <h2>Add New Book Details</h2>
+            <form id="add-book-form">
+                <div>
+                    <label for="cover-image">Cover Image (158x210):</label>
+                    <input type="file" id="cover-image" name="cover-image" accept="image/*" required>
+                </div>
+                <div>
+                    <label for="description">Book Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="pdf-file">Book PDF:</label>
+                    <input type="file" id="pdf-file" name="pdf-file" accept=".pdf" required>
+                </div>
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="general">General</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="thriller-mystery">Thriller & Mystery</option>
+                        <option value="comic-book">Comic Book</option>
+                        <option value="short-stories">Short Stories</option>
+                    </select>
+                </div>
+                <button type="submit">Add Book to Collection</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Book Web App</p>
+    </footer>
+</body>
+</html>
